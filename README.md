@@ -18,8 +18,10 @@ eth/
   hoodi/
     forks.json
     peers.json
-    optimum_ethereum_hoodi_v0_2_peers.json
-    optimum_hoodi_v0_1_peers.json
+    optimum_ethereum_hoodi_v0_1_peers.json
+    optimum_hoodi_v0_2_peers.json
+  plataberget/
+    forks.json
 ```
 
 ## File formats
@@ -46,8 +48,10 @@ Each entry in a `peers.json` file is one gateway, with:
 - `version` / `commit_hash` — the gateway build
 - `last_seen` — last time the gateway was seen, in UTC
 
-The versioned peer files (`optimum_ethereum_<chain>_v*_peers.json`) are the
-current lists per cluster; `peers.json` is the unversioned snapshot.
+The versioned peer files come in two forms,
+`optimum_ethereum_<chain>_v*_peers.json` and
+`optimum_<chain>_v*_peers.json`, and are the current lists per cluster;
+`peers.json` is the unversioned snapshot.
 
 ## Contributing
 
